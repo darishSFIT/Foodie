@@ -50,7 +50,6 @@ router.post("/", function(req, res, next) {
                 console.log("Reserved");
                 var tableno = table.name;
                 var tableloc= table.location;
-                // var time = req.body.time;
                 var name = req.body.name;
                 var to = req.body.email;
 
@@ -59,7 +58,7 @@ router.post("/", function(req, res, next) {
                           <body>
                              <p style="font-size: 16px; font-weight: bold;">
                                 Hi!, ${name} We received your table booking request for ${tableno}. Thank you for choosing Foodie.
-                                 ${tableloc}${time}
+                                 ${tableloc}
                              </p>
                            </body>
                         </html>`;
