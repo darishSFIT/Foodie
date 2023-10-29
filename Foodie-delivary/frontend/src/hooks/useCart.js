@@ -15,10 +15,16 @@ export default function CartProvider({ children }) {
   const [totalCount, setTotalCount] = useState(initCart.totalCount);
 
   useEffect(() => {
-    const totalPrice = sum(cartItems.map(item => item.price));
     const totalCount = sum(cartItems.map(item => item.quantity));
-    setTotalPrice(totalPrice);
+    if(totalCount>=10){
+      var initialPrice = sum(cartItems.map(item => item.price));
+      var discount = initialPrice * 0.9 -initialPrice;
+      var totalPrice = initialPrice + discount;
+    }else{
+       totalPrice = sum(cartItems.map(item => item.price));
+    }
     setTotalCount(totalCount);
+    setTotalPrice(totalPrice);
 
     localStorage.setItem(
       CART_KEY,
