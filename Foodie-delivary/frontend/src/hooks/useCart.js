@@ -18,7 +18,7 @@ export default function CartProvider({ children }) {
     const totalCount = sum(cartItems.map(item => item.quantity));
     if(totalCount>=10){
       var initialPrice = sum(cartItems.map(item => item.price));
-      var discount = initialPrice * 0.9 -initialPrice;
+      var discount = initialPrice * 0.9 - initialPrice;
       var totalPrice = initialPrice + discount;
     }else{
        totalPrice = sum(cartItems.map(item => item.price));
