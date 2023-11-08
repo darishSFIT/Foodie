@@ -65,6 +65,50 @@ export const sample_foods = [
     imageUrl: 'food-6.jpg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
+  {
+    //id: '7',
+    name: 'Coffie',
+    price: 1,
+    cookTime: '4-5',
+    favorite: true,
+    origins: ['ethiopia'],
+    stars: 4.0,
+    imageUrl: 'food-7.jpg',
+    tags: ['Beverage', 'Breakfast'],
+  },
+  {
+    //id: '8',
+    name: 'Paneer Rice',
+    price: 10,
+    cookTime: '20-25',
+    favorite: false,
+    origins: ['India'],
+    stars: 4.0,
+    imageUrl: 'food-8.jpg',
+    tags: ['SlowFood', 'Lunch'],
+  },
+  {
+    //id: '9',
+    name: 'Sandwich',
+    price: 2,
+    cookTime: '5-10',
+    favorite: false,
+    origins: ['europe'],
+    stars: 4.0,
+    imageUrl: 'food-9.jpg',
+    tags: ['Breakfast'],
+  },
+  {
+    //id: '10',
+    name: 'idli-sambar',
+    price: 2,
+    cookTime: '5-10',
+    favorite: true,
+    origins: ['south-india'],
+    stars: 4.0,
+    imageUrl: 'food-10.jpg',
+    tags: ['Breakfast'],
+  },
 ];
 
 export const sample_tags = [
@@ -76,6 +120,7 @@ export const sample_tags = [
   { name: 'Hamburger', count: 1 },
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
+  { name: 'breakfast', count: 3 }
 ];
 
 export const sample_users = [
