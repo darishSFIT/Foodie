@@ -1,0 +1,1 @@
+A two in one website making it simpler for local restaurants business to grow online and making it easier to book(tables) and order(food) through various payment means. The project was made using React.js for frontend as well as Node.js and Express for backend. For database, MongoDB was used.
